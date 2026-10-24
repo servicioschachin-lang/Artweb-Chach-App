@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Colores de Maya · Claymorfismo Landing</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={corePlugins:{preflight:false}}</script>
+<style>
+:root{--peach:#ffc9a9;--mint:#b8f0d8;--sun:#ffe08a;--sky:#b5dcff;--pink:#ffb8d4;--ink:#4a3552}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{font-family:'Fredoka',sans-serif;background:#fff4e8;color:var(--ink);overflow-x:hidden}
+.clay{border-radius:38px;box-shadow:10px 14px 24px rgba(74,53,82,.18),inset -8px -8px 14px rgba(0,0,0,.08),inset 8px 8px 14px rgba(255,255,255,.75)}
+.clay-sm{border-radius:24px;box-shadow:6px 8px 14px rgba(74,53,82,.18),inset -5px -5px 9px rgba(0,0,0,.08),inset 5px 5px 9px rgba(255,255,255,.75)}
+.c-peach{background:var(--peach)}.c-mint{background:var(--mint)}.c-sun{background:var(--sun)}.c-sky{background:var(--sky)}.c-pink{background:var(--pink)}.c-white{background:#fffaf4}
+.btn-clay{border:0;border-radius:999px;font-weight:600;padding:.85rem 2rem;color:var(--ink);background:var(--sun);box-shadow:6px 8px 14px rgba(74,53,82,.22),inset -4px -4px 8px rgba(0,0,0,.1),inset 4px 4px 8px rgba(255,255,255,.8);transition:.2s}
+.btn-clay:hover{transform:translateY(-3px);color:var(--ink)}
+.btn-clay:active{transform:translateY(2px)}
+.hero-wrap{background:linear-gradient(180deg,#ffd9bd 0,#fff4e8 100%)}
+.blob{position:absolute;border-radius:50%;filter:blur(2px);opacity:.9}
+.pimg{width:100%;height:190px;object-fit:cover;border-radius:26px;background:linear-gradient(135deg,#ffb8d4,#b5dcff)}
+.soc{width:52px;height:52px;display:inline-grid;place-items:center;border-radius:50%;color:var(--ink);text-decoration:none;font-size:1.25rem;transition:.2s}
+.soc:hover{transform:translateY(-4px) rotate(-6deg);color:var(--ink)}
+#menu a{color:var(--ink);text-decoration:none;font-weight:600}
+#menu a:hover{color:#e0568f}
+.form-control{border:0;border-radius:22px;padding:.95rem 1.2rem;background:#fffaf4;box-shadow:inset 5px 5px 10px rgba(74,53,82,.15),inset -5px -5px 10px #fff;color:var(--ink)}
+@media(max-width:767px){#menu{position:absolute;top:84px;left:0;right:0;flex-direction:column;gap:1rem;padding:1.4rem;background:#fffaf4;border-radius:30px;box-shadow:10px 14px 24px rgba(74,53,82,.2)}}
+</style>
+</head>
+<body>
+<header class="sticky top-0 z-50 pt-3 px-3">
+  <div class="container relative">
+    <div class="clay-sm c-white flex items-center justify-between px-4 py-3">
+      <a href="#top" class="flex items-center gap-2 no-underline font-bold text-xl" style="color:var(--ink)"><span class="clay-sm c-pink w-10 h-10 grid place-items-center"><i class="bi bi-palette-fill"></i></span> Colores de Maya</a>
+      <nav id="menu" class="hidden md:flex items-center gap-7">
+        <a href="#top">Inicio</a><a href="#categorias">Categorías</a><a href="#favoritos">Favoritos</a><a href="#historia">Historia</a><a href="#contacto" class="btn-clay !py-2 !px-4 c-mint">Escríbenos</a>
+      </nav>
+      <button id="burger" aria-label="Abrir menú" class="md:hidden clay-sm c-sun w-11 h-11 border-0 text-2xl"><i class="bi bi-list"></i></button>
+    </div>
+  </div>
+</header>
+
+<section id="top" class="hero-wrap relative overflow-hidden">
+  <div class="blob c-pink" style="width:180px;height:180px;top:40px;left:-60px"></div>
+  <div class="blob c-sky" style="width:120px;height:120px;bottom:40px;right:8%"></div>
+  <div class="container py-14 md:py-20 relative">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <span class="clay-sm c-mint inline-block px-4 py-2 font-semibold mb-4">🌈 Artesanía con mucho color</span>
+        <h1 class="text-5xl md:text-7xl font-bold leading-none mb-4">Arte maya <span style="color:#e0568f">suave</span> y divertido</h1>
+        <p class="text-lg mb-5" style="max-width:500px">Muñecas, textiles, alebrijes y cerámica pintada a mano. Piezas redondas, alegres y hechas con cariño en Guatemala.</p>
+        <div class="flex flex-wrap gap-3"><a href="#favoritos" class="btn btn-clay">Ver favoritos</a><a href="#historia" class="btn btn-clay c-sky">Nuestra historia</a></div>
+      </div>
+      <div class="col-lg-6">
+        <div class="clay c-peach p-3 relative"><img class="w-100 rounded-[28px]" style="height:400px;object-fit:cover;background:linear-gradient(135deg,#ffb8d4,#ffe08a)" alt="Textiles de colores" src="https://images.pexels.com/photos/7205806/pexels-photo-7205806.jpeg?auto=compress&cs=tinysrgb&w=1200">
+        <span class="clay-sm c-sun absolute px-4 py-2 font-bold" style="top:-14px;right:20px">¡Nuevo! ✨</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="categorias" class="container py-16">
+  <h2 class="text-center text-4xl font-bold mb-10">Elige tu <span style="color:#e0568f">aventura</span></h2>
+  <div class="row g-4">
+    <div class="col-6 col-md-3"><div class="clay c-pink p-4 text-center h-100"><div class="text-5xl mb-2">🧵</div><h5 class="font-bold">Textiles</h5></div></div>
+    <div class="col-6 col-md-3"><div class="clay c-mint p-4 text-center h-100"><div class="text-5xl mb-2">🏺</div><h5 class="font-bold">Cerámica</h5></div></div>
+    <div class="col-6 col-md-3"><div class="clay c-sun p-4 text-center h-100"><div class="text-5xl mb-2">🎭</div><h5 class="font-bold">Máscaras</h5></div></div>
+    <div class="col-6 col-md-3"><div class="clay c-sky p-4 text-center h-100"><div class="text-5xl mb-2">🪆</div><h5 class="font-bold">Muñecas</h5></div></div>
+  </div>
+</section>
+
+<section id="favoritos" class="container pb-16">
+  <h2 class="text-center text-4xl font-bold mb-10">Los más <span style="color:#e0568f">queridos</span></h2>
+  <div class="row g-4">
+    <div class="col-md-4"><div class="clay c-white p-3 h-100"><img class="pimg" loading="lazy" alt="Textil" src="https://images.pexels.com/photos/7205811/pexels-photo-7205811.jpeg?auto=compress&cs=tinysrgb&w=800"><h5 class="font-bold mt-3">Bolsa arcoíris</h5><p class="text-sm mb-3">Tela gruesa y asas suaves.</p><div class="flex justify-between items-center"><b class="text-xl">Q 140</b><button class="btn btn-clay !py-2 !px-4 c-pink">Lo quiero</button></div></div></div>
+    <div class="col-md-4"><div class="clay c-white p-3 h-100"><img class="pimg" loading="lazy" alt="Artesanía" src="https://images.pexels.com/photos/13752944/pexels-photo-13752944.jpeg?auto=compress&cs=tinysrgb&w=800"><h5 class="font-bold mt-3">Manta de juego</h5><p class="text-sm mb-3">Cálida, grande y resistente.</p><div class="flex justify-between items-center"><b class="text-xl">Q 260</b><button class="btn btn-clay !py-2 !px-4 c-mint">Lo quiero</button></div></div></div>
+    <div class="col-md-4"><div class="clay c-white p-3 h-100"><img class="pimg" loading="lazy" alt="Mercado" src="https://images.pexels.com/photos/10346036/pexels-photo-10346036.jpeg?auto=compress&cs=tinysrgb&w=800"><h5 class="font-bold mt-3">Set de mesa</h5><p class="text-sm mb-3">Cuatro piezas con colores vivos.</p><div class="flex justify-between items-center"><b class="text-xl">Q 195</b><button class="btn btn-clay !py-2 !px-4 c-sky">Lo quiero</button></div></div></div>
+  </div>
+</section>
+
+<section id="historia" class="container pb-16">
+  <div class="clay c-sky p-5 md:p-10">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-5"><img class="w-100 rounded-[30px]" style="height:300px;object-fit:cover;background:linear-gradient(135deg,#ffe08a,#ffb8d4)" loading="lazy" alt="Artesana" src="https://images.pexels.com/photos/31776906/pexels-photo-31776906.jpeg?auto=compress&cs=tinysrgb&w=1000"></div>
+      <div class="col-lg-7"><h2 class="text-4xl font-bold mb-3">Hecho por manos que sonríen</h2><p class="text-lg">Trabajamos con cooperativas de mujeres que combinan tradición y creatividad. Cada compra apoya su educación, su salud y su futuro.</p><div class="grid grid-cols-3 gap-3 text-center mt-4"><div class="clay-sm c-white p-3"><b class="text-2xl block">12</b><small>Cooperativas</small></div><div class="clay-sm c-white p-3"><b class="text-2xl block">300+</b><small>Familias</small></div><div class="clay-sm c-white p-3"><b class="text-2xl block">8</b><small>Años</small></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="container pb-16">
+  <div class="clay c-peach p-5 md:p-10">
+    <h2 class="text-4xl font-bold text-center mb-4">¡Dinos hola! 👋</h2>
+    <form class="row g-3 justify-content-center" onsubmit="event.preventDefault();alert('¡Gracias por escribirnos!')">
+      <div class="col-md-5"><input class="form-control" placeholder="Tu nombre" required></div>
+      <div class="col-md-5"><input class="form-control" type="email" placeholder="Tu correo" required></div>
+      <div class="col-md-10"><textarea class="form-control" rows="3" placeholder="¿Qué te gustaría pedir?"></textarea></div>
+      <div class="col-12 text-center"><button class="btn btn-clay c-mint">Enviar mensaje</button></div>
+    </form>
+  </div>
+</section>
+
+<footer class="container py-8 text-center">
+  <div class="flex justify-center gap-3 mb-3">
+    <a class="soc clay-sm c-pink" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+    <a class="soc clay-sm c-mint" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+    <a class="soc clay-sm c-sun" href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+    <a class="soc clay-sm c-sky" href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+  </div>
+  <small>© 2026 Colores de Maya · Guatemala · Contenido de ejemplo</small>
+</footer>
+
+<script>
+const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.addEventListener('click',()=>{menu.classList.toggle('hidden');burger.innerHTML=menu.classList.contains('hidden')?'<i class="bi bi-list"></i>':'<i class="bi bi-x-lg"></i>'});
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<768){menu.classList.add('hidden');burger.innerHTML='<i class="bi bi-list"></i>'}}));
+document.querySelectorAll('img').forEach(i=>i.addEventListener('error',()=>{i.style.opacity=0}));
+</script>
+</body>
+</html>

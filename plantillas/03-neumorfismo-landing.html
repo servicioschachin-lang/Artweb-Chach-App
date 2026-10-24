@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Telar Vivo · Neumorfismo Landing</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={corePlugins:{preflight:false}}</script>
+<style>
+:root{--bg:#e0e5ec;--hi:#ffffff;--lo:#a3b1c6;--ink:#44506a;--acc:#ff6b6b}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--ink)}
+.neu{background:var(--bg);border-radius:28px;box-shadow:10px 10px 22px var(--lo),-10px -10px 22px var(--hi)}
+.neu-sm{background:var(--bg);border-radius:18px;box-shadow:6px 6px 12px var(--lo),-6px -6px 12px var(--hi)}
+.neu-in{background:var(--bg);border-radius:18px;box-shadow:inset 6px 6px 12px var(--lo),inset -6px -6px 12px var(--hi)}
+.btn-neu{background:var(--bg);color:var(--acc);font-weight:800;border:0;border-radius:18px;padding:.85rem 1.8rem;box-shadow:6px 6px 12px var(--lo),-6px -6px 12px var(--hi);transition:.2s}
+.btn-neu:hover{color:var(--acc)}
+.btn-neu:active{box-shadow:inset 4px 4px 8px var(--lo),inset -4px -4px 8px var(--hi)}
+.btn-acc{background:var(--acc);color:#fff}
+.btn-acc:hover{color:#fff;filter:brightness(1.05)}
+.hero-img{border-radius:36px;height:420px;width:100%;object-fit:cover;background:linear-gradient(135deg,#ffb4a2,#b5c9e8)}
+.pimg{width:100%;height:190px;object-fit:cover;border-radius:20px;background:linear-gradient(135deg,#ffd6a5,#caffbf)}
+.soc{width:48px;height:48px;display:inline-grid;place-items:center;border-radius:50%;color:var(--ink);text-decoration:none;font-size:1.2rem;background:var(--bg);box-shadow:5px 5px 10px var(--lo),-5px -5px 10px var(--hi);transition:.2s}
+.soc:hover{color:var(--acc)}
+.soc:active{box-shadow:inset 3px 3px 6px var(--lo),inset -3px -3px 6px var(--hi)}
+#menu a{color:var(--ink);text-decoration:none;font-weight:700}
+#menu a:hover{color:var(--acc)}
+.form-control{background:var(--bg);border:0;border-radius:16px;padding:.9rem 1.2rem;box-shadow:inset 5px 5px 10px var(--lo),inset -5px -5px 10px var(--hi);color:var(--ink)}
+.form-control:focus{background:var(--bg);box-shadow:inset 5px 5px 10px var(--lo),inset -5px -5px 10px var(--hi),0 0 0 2px var(--acc);color:var(--ink)}
+@media(max-width:767px){#menu{position:absolute;top:84px;left:0;right:0;flex-direction:column;gap:1.1rem;padding:1.4rem;background:var(--bg);border-radius:24px;box-shadow:10px 10px 22px var(--lo),-10px -10px 22px var(--hi)}}
+</style>
+</head>
+<body>
+<header class="sticky top-0 z-50 py-3" style="background:var(--bg)">
+  <div class="container relative">
+    <div class="neu-sm flex items-center justify-between px-4 py-3">
+      <a href="#top" class="flex items-center gap-2 no-underline font-extrabold text-xl" style="color:var(--ink)"><span class="neu-in w-10 h-10 grid place-items-center" style="color:var(--acc)"><i class="bi bi-scissors"></i></span> Telar Vivo</a>
+      <nav id="menu" class="hidden md:flex items-center gap-7">
+        <a href="#inicio">Inicio</a><a href="#oficios">Oficios</a><a href="#tienda">Tienda</a><a href="#taller">Talleres</a><a href="#contacto">Contacto</a>
+      </nav>
+      <button id="burger" aria-label="Abrir menú" class="md:hidden neu-sm w-11 h-11 border-0 text-2xl" style="color:var(--acc)"><i class="bi bi-list"></i></button>
+    </div>
+  </div>
+</header>
+
+<section id="top" class="container py-12 md:py-20">
+  <div id="inicio" class="row align-items-center g-5">
+    <div class="col-lg-6">
+      <span class="neu-in inline-block px-4 py-2 text-sm font-bold mb-4" style="color:var(--acc)">Artesanía guatemalteca</span>
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Tejemos <span style="color:var(--acc)">suavidad</span> y tradición</h1>
+      <p class="text-lg mb-5" style="max-width:520px">Piezas hechas a mano por familias de los Altos de Guatemala. Texturas suaves, colores vivos y una historia detrás de cada hilo.</p>
+      <div class="flex flex-wrap gap-4"><a href="#tienda" class="btn btn-neu btn-acc">Explorar tienda</a><a href="#oficios" class="btn btn-neu">Nuestros oficios</a></div>
+    </div>
+    <div class="col-lg-6"><div class="neu p-3"><img class="hero-img" alt="Tejedora guatemalteca" src="https://images.pexels.com/photos/37099813/pexels-photo-37099813.jpeg?auto=compress&cs=tinysrgb&w=1200"></div></div>
+  </div>
+</section>
+
+<section id="oficios" class="container py-12">
+  <h2 class="text-center text-3xl md:text-4xl font-extrabold mb-10">Nuestros oficios</h2>
+  <div class="row g-4">
+    <div class="col-md-3 col-6"><div class="neu p-4 text-center h-100"><div class="neu-in w-16 h-16 mx-auto grid place-items-center text-3xl mb-3" style="color:var(--acc)"><i class="bi bi-grid-3x3-gap"></i></div><h5 class="font-extrabold">Tejidos</h5><small>Telar de cintura</small></div></div>
+    <div class="col-md-3 col-6"><div class="neu p-4 text-center h-100"><div class="neu-in w-16 h-16 mx-auto grid place-items-center text-3xl mb-3" style="color:#4d9de0"><i class="bi bi-cup-hot"></i></div><h5 class="font-extrabold">Cerámica</h5><small>Barro y esmaltes</small></div></div>
+    <div class="col-md-3 col-6"><div class="neu p-4 text-center h-100"><div class="neu-in w-16 h-16 mx-auto grid place-items-center text-3xl mb-3" style="color:#3bb273"><i class="bi bi-tree"></i></div><h5 class="font-extrabold">Madera</h5><small>Tallado a mano</small></div></div>
+    <div class="col-md-3 col-6"><div class="neu p-4 text-center h-100"><div class="neu-in w-16 h-16 mx-auto grid place-items-center text-3xl mb-3" style="color:#e1a100"><i class="bi bi-gem"></i></div><h5 class="font-extrabold">Joyería</h5><small>Jade y plata</small></div></div>
+  </div>
+</section>
+
+<section id="tienda" class="container py-12">
+  <h2 class="text-center text-3xl md:text-4xl font-extrabold mb-10">Tienda</h2>
+  <div class="row g-4">
+    <div class="col-md-4"><div class="neu p-3 h-100"><img class="pimg" loading="lazy" alt="Tejido" src="https://images.pexels.com/photos/7205806/pexels-photo-7205806.jpeg?auto=compress&cs=tinysrgb&w=800"><h5 class="font-extrabold mt-3">Bufanda de algodón</h5><p class="mb-3 text-sm">Suave, ligera y teñida con añil.</p><div class="flex justify-between items-center"><b style="color:var(--acc)" class="text-lg">Q 180</b><button class="btn btn-neu !py-2 !px-4">Añadir</button></div></div></div>
+    <div class="col-md-4"><div class="neu p-3 h-100"><img class="pimg" loading="lazy" alt="Textil" src="https://images.pexels.com/photos/7205811/pexels-photo-7205811.jpeg?auto=compress&cs=tinysrgb&w=800"><h5 class="font-extrabold mt-3">Cojín bordado</h5><p class="mb-3 text-sm">Motivos tradicionales en relieve.</p><div class="flex justify-between items-center"><b style="color:var(--acc)" class="text-lg">Q 150</b><button class="btn btn-neu !py-2 !px-4">Añadir</button></div></div></div>
+    <div class="col-md-4"><div class="neu p-3 h-100"><img class="pimg" loading="lazy" alt="Mercado" src="https://images.pexels.com/photos/8207648/pexels-photo-8207648.jpeg?auto=compress&cs=tinysrgb&w=800"><h5 class="font-extrabold mt-3">Tapiz decorativo</h5><p class="mb-3 text-sm">Para dar calidez a cualquier pared.</p><div class="flex justify-between items-center"><b style="color:var(--acc)" class="text-lg">Q 420</b><button class="btn btn-neu !py-2 !px-4">Añadir</button></div></div></div>
+  </div>
+</section>
+
+<section id="taller" class="container py-12">
+  <div class="neu p-5 md:p-8">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7"><h2 class="text-3xl font-extrabold mb-3">Aprende con las maestras tejedoras</h2><p>Talleres de medio día donde conocerás la técnica del telar de cintura, el teñido natural y la simbología maya.</p><div class="flex flex-wrap gap-3 mt-3"><span class="neu-in px-4 py-2 font-bold"><i class="bi bi-clock"></i> 4 horas</span><span class="neu-in px-4 py-2 font-bold"><i class="bi bi-people"></i> Grupos pequeños</span><span class="neu-in px-4 py-2 font-bold"><i class="bi bi-gift"></i> Llévate tu pieza</span></div></div>
+      <div class="col-lg-5 text-lg-end"><a href="#contacto" class="btn btn-neu btn-acc">Reservar lugar</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="container py-12">
+  <div class="neu p-5 md:p-8">
+    <h2 class="text-3xl font-extrabold text-center mb-4">Contáctanos</h2>
+    <form class="row g-4" onsubmit="event.preventDefault();alert('¡Mensaje enviado!')">
+      <div class="col-md-6"><input class="form-control" placeholder="Nombre" required></div>
+      <div class="col-md-6"><input type="email" class="form-control" placeholder="Correo" required></div>
+      <div class="col-12"><textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea></div>
+      <div class="col-12 text-center"><button class="btn btn-neu btn-acc">Enviar</button></div>
+    </form>
+  </div>
+</section>
+
+<footer class="container py-10 text-center">
+  <div class="flex justify-center gap-4 mb-4">
+    <a class="soc" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+    <a class="soc" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+    <a class="soc" href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+    <a class="soc" href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+  </div>
+  <small>© 2026 Telar Vivo · Guatemala · Contenido de ejemplo</small>
+</footer>
+
+<script>
+const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.addEventListener('click',()=>{menu.classList.toggle('hidden');burger.innerHTML=menu.classList.contains('hidden')?'<i class="bi bi-list"></i>':'<i class="bi bi-x-lg"></i>'});
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<768){menu.classList.add('hidden');burger.innerHTML='<i class="bi bi-list"></i>'}}));
+document.querySelectorAll('img').forEach(i=>i.addEventListener('error',()=>{i.style.opacity=0}));
+</script>
+</body>
+</html>

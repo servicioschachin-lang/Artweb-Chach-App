@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tz'ib Artesanías · Glasmorfismo Landing</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={corePlugins:{preflight:false}}</script>
+<style>
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;background:#0f0c29;color:#e9e7ff;overflow-x:hidden}
+.bg-app{position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 15% 20%,#4c1d95 0,transparent 45%),radial-gradient(circle at 85% 30%,#0e7490 0,transparent 45%),radial-gradient(circle at 50% 90%,#9d174d 0,transparent 50%),#0f0c29}
+.glass{background:rgba(255,255,255,.09);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.2);border-radius:26px;box-shadow:0 10px 40px rgba(0,0,0,.35)}
+.hero{min-height:100vh;background:linear-gradient(120deg,rgba(15,12,41,.85),rgba(76,29,149,.55)),url('https://images.pexels.com/photos/31776906/pexels-photo-31776906.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover}
+.grad-text{background:linear-gradient(90deg,#22d3ee,#f472b6,#fbbf24);-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn-glass{background:linear-gradient(135deg,#22d3ee,#a855f7);border:0;color:#0f0c29;font-weight:600;border-radius:999px;padding:.8rem 1.8rem}
+.btn-glass:hover{filter:brightness(1.1);color:#0f0c29}
+.btn-ghost{border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:999px;padding:.8rem 1.8rem;background:rgba(255,255,255,.08)}
+.btn-ghost:hover{background:rgba(255,255,255,.2);color:#fff}
+.card-img{height:210px;width:100%;object-fit:cover;border-radius:20px;background:linear-gradient(135deg,#a855f7,#22d3ee)}
+.soc{width:44px;height:44px;display:inline-grid;place-items:center;border-radius:50%;color:#fff;font-size:1.15rem;transition:.25s}
+.soc:hover{transform:translateY(-4px);background:rgba(255,255,255,.25);color:#fff}
+#menu a{color:#e9e7ff;text-decoration:none;font-weight:500}
+#menu a:hover{color:#22d3ee}
+@media(max-width:767px){#menu{position:absolute;top:78px;left:12px;right:12px;flex-direction:column;padding:1.2rem;gap:1rem;background:rgba(20,15,60,.85);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.2);border-radius:22px}}
+</style>
+</head>
+<body>
+<div class="bg-app"></div>
+
+<header class="fixed top-3 inset-x-3 z-50">
+  <div class="glass container mx-auto flex items-center justify-between px-4 py-3 relative" style="max-width:1140px">
+    <a href="#top" class="flex items-center gap-2 text-white no-underline font-semibold text-lg"><i class="bi bi-gem text-cyan-300"></i> Tz'ib <span class="grad-text">Artesanías</span></a>
+    <nav id="menu" class="hidden md:flex items-center gap-7">
+      <a href="#nosotros">Nosotros</a><a href="#productos">Productos</a><a href="#proceso">Proceso</a><a href="#opiniones">Opiniones</a><a href="#contacto" class="btn btn-glass !py-2 !px-4">Contacto</a>
+    </nav>
+    <button id="burger" aria-label="Abrir menú" class="md:hidden text-white text-3xl bg-transparent border-0"><i class="bi bi-list"></i></button>
+  </div>
+</header>
+
+<section id="top" class="hero flex items-center">
+  <div class="container pt-28 pb-16">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <span class="glass inline-block px-4 py-2 text-sm mb-4"><i class="bi bi-stars text-amber-300"></i> Hecho a mano en Guatemala</span>
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Color, tradición y <span class="grad-text">alma maya</span> en cada pieza</h1>
+        <p class="text-lg text-slate-200 mb-5" style="max-width:560px">Textiles, cerámica y tallados creados por manos artesanas. Lleva a casa una historia tejida con paciencia y orgullo.</p>
+        <div class="flex flex-wrap gap-3"><a href="#productos" class="btn btn-glass">Ver colección</a><a href="#nosotros" class="btn btn-ghost">Conocer más</a></div>
+      </div>
+      <div class="col-lg-5">
+        <div class="glass p-4">
+          <div class="grid grid-cols-3 text-center gap-2">
+            <div><div class="text-3xl font-bold grad-text">+120</div><small>Artesanos</small></div>
+            <div><div class="text-3xl font-bold grad-text">15</div><small>Comunidades</small></div>
+            <div><div class="text-3xl font-bold grad-text">4.9★</div><small>Valoración</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="nosotros" class="container py-20">
+  <div class="text-center mb-12"><h2 class="text-3xl md:text-4xl font-semibold">Por qué <span class="grad-text">elegirnos</span></h2><p class="text-slate-300">Comercio justo y calidad certificada por las propias comunidades.</p></div>
+  <div class="row g-4">
+    <div class="col-md-4"><div class="glass p-5 h-100"><i class="bi bi-hand-index-thumb text-4xl text-cyan-300"></i><h3 class="text-xl font-semibold mt-3">100% artesanal</h3><p class="text-slate-300 mb-0">Cada pieza es única, elaborada con técnicas heredadas por generaciones.</p></div></div>
+    <div class="col-md-4"><div class="glass p-5 h-100"><i class="bi bi-heart text-4xl text-pink-300"></i><h3 class="text-xl font-semibold mt-3">Comercio justo</h3><p class="text-slate-300 mb-0">Pagamos precios justos y apoyamos directamente a las familias artesanas.</p></div></div>
+    <div class="col-md-4"><div class="glass p-5 h-100"><i class="bi bi-globe-americas text-4xl text-amber-300"></i><h3 class="text-xl font-semibold mt-3">Envíos a todo el mundo</h3><p class="text-slate-300 mb-0">Empaque cuidadoso y seguimiento de principio a fin.</p></div></div>
+  </div>
+</section>
+
+<section id="productos" class="container pb-20">
+  <div class="text-center mb-12"><h2 class="text-3xl md:text-4xl font-semibold">Colección <span class="grad-text">destacada</span></h2></div>
+  <div class="row g-4">
+    <div class="col-sm-6 col-lg-3"><div class="glass p-3 h-100"><img class="card-img" loading="lazy" alt="Huipil tejido" src="https://images.pexels.com/photos/37099813/pexels-photo-37099813.jpeg?auto=compress&cs=tinysrgb&w=700"><h4 class="mt-3 text-lg font-semibold">Huipil de Sololá</h4><p class="text-slate-300 text-sm">Bordado a mano con motivos florales.</p><div class="flex justify-between items-center"><b class="text-cyan-300">Q 650</b><a href="#contacto" class="btn btn-ghost !py-1 !px-3 text-sm">Pedir</a></div></div></div>
+    <div class="col-sm-6 col-lg-3"><div class="glass p-3 h-100"><img class="card-img" loading="lazy" alt="Tejidos coloridos" src="https://images.pexels.com/photos/7205806/pexels-photo-7205806.jpeg?auto=compress&cs=tinysrgb&w=700"><h4 class="mt-3 text-lg font-semibold">Mantel multicolor</h4><p class="text-slate-300 text-sm">Telar de pie, algodón natural.</p><div class="flex justify-between items-center"><b class="text-cyan-300">Q 280</b><a href="#contacto" class="btn btn-ghost !py-1 !px-3 text-sm">Pedir</a></div></div></div>
+    <div class="col-sm-6 col-lg-3"><div class="glass p-3 h-100"><img class="card-img" loading="lazy" alt="Artesanía" src="https://images.pexels.com/photos/7205811/pexels-photo-7205811.jpeg?auto=compress&cs=tinysrgb&w=700"><h4 class="mt-3 text-lg font-semibold">Morral tradicional</h4><p class="text-slate-300 text-sm">Resistente, ligero y lleno de color.</p><div class="flex justify-between items-center"><b class="text-cyan-300">Q 190</b><a href="#contacto" class="btn btn-ghost !py-1 !px-3 text-sm">Pedir</a></div></div></div>
+    <div class="col-sm-6 col-lg-3"><div class="glass p-3 h-100"><img class="card-img" loading="lazy" alt="Mercado de artesanías" src="https://images.pexels.com/photos/13752944/pexels-photo-13752944.jpeg?auto=compress&cs=tinysrgb&w=700"><h4 class="mt-3 text-lg font-semibold">Camino de mesa</h4><p class="text-slate-300 text-sm">Diseños geométricos ancestrales.</p><div class="flex justify-between items-center"><b class="text-cyan-300">Q 220</b><a href="#contacto" class="btn btn-ghost !py-1 !px-3 text-sm">Pedir</a></div></div></div>
+  </div>
+</section>
+
+<section id="proceso" class="container pb-20">
+  <div class="glass p-5 md:p-8">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6"><img class="w-100 rounded-3xl" style="height:340px;object-fit:cover;background:linear-gradient(135deg,#a855f7,#22d3ee)" loading="lazy" alt="Artesana en telar" src="https://images.pexels.com/photos/31776906/pexels-photo-31776906.jpeg?auto=compress&cs=tinysrgb&w=1000"></div>
+      <div class="col-lg-6">
+        <h2 class="text-3xl font-semibold mb-3">Del hilo a <span class="grad-text">la obra</span></h2>
+        <p class="text-slate-300">Teñido natural, telar de cintura y puntadas que cuentan mitos. Un proceso lento, honesto y lleno de significado.</p>
+        <ul class="list-none p-0 space-y-3">
+          <li class="flex gap-3"><i class="bi bi-1-circle-fill text-cyan-300"></i> Selección de fibras y tintes naturales</li>
+          <li class="flex gap-3"><i class="bi bi-2-circle-fill text-pink-300"></i> Tejido en telar durante días o semanas</li>
+          <li class="flex gap-3"><i class="bi bi-3-circle-fill text-amber-300"></i> Bordado, acabado y control de calidad</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="opiniones" class="container pb-20">
+  <div class="text-center mb-10"><h2 class="text-3xl font-semibold">Lo que <span class="grad-text">dicen</span></h2></div>
+  <div class="row g-4">
+    <div class="col-md-4"><div class="glass p-4 h-100"><div class="text-amber-300 mb-2">★★★★★</div><p>“Los colores son aún más bonitos en persona. Un regalo perfecto.”</p><small class="text-slate-300">— María L.</small></div></div>
+    <div class="col-md-4"><div class="glass p-4 h-100"><div class="text-amber-300 mb-2">★★★★★</div><p>“Calidad increíble y envío rapidísimo. Volveré a comprar.”</p><small class="text-slate-300">— Carlos R.</small></div></div>
+    <div class="col-md-4"><div class="glass p-4 h-100"><div class="text-amber-300 mb-2">★★★★★</div><p>“Me encanta apoyar a las comunidades y recibir piezas tan únicas.”</p><small class="text-slate-300">— Ana P.</small></div></div>
+  </div>
+</section>
+
+<section id="contacto" class="container pb-16">
+  <div class="glass p-5 md:p-8 text-center">
+    <h2 class="text-3xl font-semibold mb-2">Hablemos de tu <span class="grad-text">próxima pieza</span></h2>
+    <p class="text-slate-300 mb-4">Escríbenos y te respondemos en menos de 24 horas.</p>
+    <form class="row g-3 justify-content-center" onsubmit="event.preventDefault();alert('¡Gracias! Te contactaremos pronto.')">
+      <div class="col-md-4"><input class="form-control rounded-pill py-3 px-4 bg-white/10 text-white border-white/30" placeholder="Tu correo" type="email" required></div>
+      <div class="col-md-auto"><button class="btn btn-glass">Enviar mensaje</button></div>
+    </form>
+  </div>
+</section>
+
+<footer class="container pb-10 text-center">
+  <div class="flex justify-center gap-3 mb-3">
+    <a class="soc glass" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+    <a class="soc glass" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+    <a class="soc glass" href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+    <a class="soc glass" href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+  </div>
+  <small class="text-slate-400">© 2026 Tz'ib Artesanías · Guatemala · Texto e imágenes de ejemplo</small>
+</footer>
+
+<script>
+const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.addEventListener('click',()=>{menu.classList.toggle('hidden');burger.innerHTML=menu.classList.contains('hidden')?'<i class="bi bi-list"></i>':'<i class="bi bi-x-lg"></i>'});
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<768){menu.classList.add('hidden');burger.innerHTML='<i class="bi bi-list"></i>'}}));
+document.querySelectorAll('img').forEach(i=>i.addEventListener('error',()=>{i.style.opacity=0}));
+</script>
+</body>
+</html>

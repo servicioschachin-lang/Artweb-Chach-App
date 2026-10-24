@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atelier Kaqchikel · Minimalismo Landing</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={corePlugins:{preflight:false}}</script>
+<style>
+:root{--bg:#faf8f4;--ink:#1c1b19;--mute:#8a857b;--line:#e4dfd5;--acc:#b5532f}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;font-weight:300;background:var(--bg);color:var(--ink)}
+.serif{font-family:'Cormorant Garamond',serif;font-weight:400}
+.eyebrow{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--mute)}
+.line{border-top:1px solid var(--line)}
+.btn-min{display:inline-block;border:1px solid var(--ink);color:var(--ink);padding:.85rem 2.2rem;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;transition:.3s;background:transparent}
+.btn-min:hover{background:var(--ink);color:var(--bg)}
+.link-min{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink);font-size:.8rem;letter-spacing:.15em;text-transform:uppercase}
+.link-min:hover{color:var(--acc);border-color:var(--acc)}
+.hero{min-height:92vh;background:linear-gradient(rgba(250,248,244,.35),rgba(250,248,244,.35)),url('https://images.pexels.com/photos/37099813/pexels-photo-37099813.jpeg?auto=compress&cs=tinysrgb&w=1800') center/cover,#e8e0d2}
+.pimg{width:100%;aspect-ratio:4/5;object-fit:cover;background:#e8e0d2;transition:.6s}
+.pcard:hover .pimg{opacity:.85}
+.soc{color:var(--ink);font-size:1.15rem;margin:0 .7rem;transition:.2s}
+.soc:hover{color:var(--acc)}
+#menu a{color:var(--ink);text-decoration:none;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase}
+#menu a:hover{color:var(--acc)}
+.form-control{border:0;border-bottom:1px solid var(--ink);border-radius:0;background:transparent;padding:.8rem 0;font-weight:300}
+.form-control:focus{box-shadow:none;background:transparent;border-color:var(--acc)}
+@media(max-width:767px){#menu{position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:1.4rem;padding:2rem;background:var(--bg);border-bottom:1px solid var(--line);align-items:center}}
+</style>
+</head>
+<body>
+<header class="absolute top-0 inset-x-0 z-50">
+  <div class="container relative flex items-center justify-between py-4">
+    <a href="#top" class="serif text-2xl no-underline" style="color:var(--ink);letter-spacing:.04em">Atelier Kaqchikel</a>
+    <nav id="menu" class="hidden md:flex items-center gap-10">
+      <a href="#filosofia">Filosofía</a><a href="#coleccion">Colección</a><a href="#materiales">Materiales</a><a href="#contacto">Contacto</a>
+    </nav>
+    <button id="burger" aria-label="Abrir menú" class="md:hidden bg-transparent border-0 text-3xl"><i class="bi bi-list"></i></button>
+  </div>
+</header>
+
+<section id="top" class="hero flex items-end">
+  <div class="container pb-16">
+    <p class="eyebrow mb-3" style="color:var(--ink)">Artesanía de Guatemala</p>
+    <h1 class="serif text-5xl md:text-8xl leading-none mb-5" style="max-width:780px">Menos objetos,<br><em>más historia.</em></h1>
+    <a href="#coleccion" class="btn-min">Ver colección</a>
+  </div>
+</section>
+
+<section id="filosofia" class="container py-24">
+  <div class="row g-5 align-items-center">
+    <div class="col-lg-5"><p class="eyebrow mb-3">Filosofía</p><h2 class="serif text-4xl md:text-5xl leading-tight">Lo esencial, hecho con tiempo.</h2></div>
+    <div class="col-lg-6 offset-lg-1"><p class="mb-4" style="color:#4b4840;line-height:1.9">Trabajamos con pocas piezas, bien pensadas. Cada textil nace en un telar de cintura y cada vasija en un horno de leña. Sin ruido, sin excesos: solo materiales nobles y oficio.</p><a href="#materiales" class="link-min">Conocer materiales</a></div>
+  </div>
+</section>
+
+<section id="coleccion" class="container pb-24">
+  <div class="flex items-end justify-between mb-10"><h2 class="serif text-4xl md:text-5xl">Colección</h2><span class="eyebrow">04 piezas</span></div>
+  <div class="row g-4">
+    <div class="col-6 col-lg-3 pcard"><img class="pimg" loading="lazy" alt="Textil" src="https://images.pexels.com/photos/7205806/pexels-photo-7205806.jpeg?auto=compress&cs=tinysrgb&w=700"><p class="serif text-xl mt-3 mb-0">Manta Ixil</p><small style="color:var(--mute)">Q 540</small></div>
+    <div class="col-6 col-lg-3 pcard"><img class="pimg" loading="lazy" alt="Textil" src="https://images.pexels.com/photos/7205811/pexels-photo-7205811.jpeg?auto=compress&cs=tinysrgb&w=700"><p class="serif text-xl mt-3 mb-0">Cojín Atitlán</p><small style="color:var(--mute)">Q 190</small></div>
+    <div class="col-6 col-lg-3 pcard"><img class="pimg" loading="lazy" alt="Mercado" src="https://images.pexels.com/photos/8207648/pexels-photo-8207648.jpeg?auto=compress&cs=tinysrgb&w=700"><p class="serif text-xl mt-3 mb-0">Camino Tikal</p><small style="color:var(--mute)">Q 260</small></div>
+    <div class="col-6 col-lg-3 pcard"><img class="pimg" loading="lazy" alt="Artesanía" src="https://images.pexels.com/photos/13752944/pexels-photo-13752944.jpeg?auto=compress&cs=tinysrgb&w=700"><p class="serif text-xl mt-3 mb-0">Bolso Chichi</p><small style="color:var(--mute)">Q 320</small></div>
+  </div>
+</section>
+
+<section id="materiales" class="line">
+  <div class="container py-24">
+    <div class="row g-5 text-center">
+      <div class="col-md-4"><i class="bi bi-flower2 text-3xl" style="color:var(--acc)"></i><h3 class="serif text-2xl mt-3">Algodón nativo</h3><p style="color:var(--mute)">Fibra cultivada en el altiplano.</p></div>
+      <div class="col-md-4"><i class="bi bi-droplet text-3xl" style="color:var(--acc)"></i><h3 class="serif text-2xl mt-3">Tintes naturales</h3><p style="color:var(--mute)">Añil, cochinilla y cúrcuma.</p></div>
+      <div class="col-md-4"><i class="bi bi-hand-index text-3xl" style="color:var(--acc)"></i><h3 class="serif text-2xl mt-3">Trabajo manual</h3><p style="color:var(--mute)">Sin máquinas ni producción en serie.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="line">
+  <div class="container py-24">
+    <div class="row g-5">
+      <div class="col-lg-5"><p class="eyebrow mb-3">Contacto</p><h2 class="serif text-4xl md:text-5xl">Hablemos.</h2></div>
+      <div class="col-lg-6 offset-lg-1">
+        <form onsubmit="event.preventDefault();alert('Gracias, te escribiremos pronto.')" class="space-y-4">
+          <input class="form-control mb-3" placeholder="Nombre" required>
+          <input class="form-control mb-3" type="email" placeholder="Correo electrónico" required>
+          <textarea class="form-control mb-4" rows="3" placeholder="Mensaje"></textarea>
+          <button class="btn-min" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="line py-10 text-center">
+  <div class="mb-3">
+    <a class="soc" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+    <a class="soc" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+    <a class="soc" href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+    <a class="soc" href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+  </div>
+  <small class="eyebrow">© 2026 Atelier Kaqchikel · Guatemala · Contenido de ejemplo</small>
+</footer>
+
+<script>
+const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.addEventListener('click',()=>{menu.classList.toggle('hidden');burger.innerHTML=menu.classList.contains('hidden')?'<i class="bi bi-list"></i>':'<i class="bi bi-x-lg"></i>'});
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<768){menu.classList.add('hidden');burger.innerHTML='<i class="bi bi-list"></i>'}}));
+document.querySelectorAll('img').forEach(i=>i.addEventListener('error',()=>{i.style.opacity=0}));
+</script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MERCADO RUDO · Brutalismo Multipágina</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={corePlugins:{preflight:false}}</script>
+<style>
+:root{--k:#0b0b0b;--w:#f4f4f0;--p:#ff4fa3;--c:#00e5ff;--l:#b6ff3b}
+[hidden]{display:none!important}
+body{font-family:'IBM Plex Mono',monospace;background:var(--k);color:var(--w)}
+h1,h2,h3,h4,.rm{font-family:'Rubik Mono One',sans-serif;text-transform:uppercase;line-height:1.05}
+.bx{border:3px solid var(--w);box-shadow:7px 7px 0 var(--p);background:var(--k)}
+.bx-w{border:3px solid var(--k);box-shadow:7px 7px 0 var(--c);background:var(--w);color:var(--k)}
+.btn-b{display:inline-block;border:3px solid var(--k);background:var(--l);color:var(--k);font-family:'Rubik Mono One';text-transform:uppercase;font-size:.85rem;padding:.8rem 1.4rem;box-shadow:5px 5px 0 var(--w);text-decoration:none;transition:.1s;cursor:pointer}
+.btn-b:hover{transform:translate(3px,3px);box-shadow:2px 2px 0 var(--w);color:var(--k)}
+.btn-p{background:var(--p)}.btn-c{background:var(--c)}
+.hero{border:3px solid var(--w);background:linear-gradient(rgba(11,11,11,.55),rgba(11,11,11,.55)),url('https://images.pexels.com/photos/8207648/pexels-photo-8207648.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover,repeating-linear-gradient(45deg,#ff4fa3 0 20px,#0b0b0b 20px 40px);box-shadow:9px 9px 0 var(--l)}
+.hl{background:var(--p);color:var(--k);padding:0 .25em}
+.pimg{width:100%;height:200px;object-fit:cover;border-bottom:3px solid var(--k);filter:contrast(1.15) saturate(1.3);background:repeating-linear-gradient(-45deg,#00e5ff 0 12px,#0b0b0b 12px 24px)}
+.tag{display:inline-block;border:2px solid currentColor;padding:.1rem .6rem;font-size:.75rem;font-weight:700;text-transform:uppercase}
+.soc{width:50px;height:50px;display:inline-grid;place-items:center;border:3px solid var(--w);background:var(--k);color:var(--w);font-size:1.25rem;text-decoration:none;box-shadow:4px 4px 0 var(--c);transition:.1s}
+.soc:hover{background:var(--p);color:var(--k);transform:translate(2px,2px);box-shadow:2px 2px 0 var(--c)}
+#menu a{color:var(--w);text-decoration:none;text-transform:uppercase;font-weight:700;padding:.3rem .8rem;border:3px solid transparent}
+#menu a:hover{border-color:var(--c);color:var(--c)}
+#menu a.active{background:var(--l);color:var(--k);border-color:var(--l)}
+.form-control{border:3px solid var(--w);border-radius:0;background:var(--k);color:var(--w);font-family:'IBM Plex Mono';padding:.8rem 1rem;box-shadow:5px 5px 0 var(--p)}
+.form-control::placeholder{color:#9a9a9a}
+.form-control:focus{background:var(--k);color:var(--w);border-color:var(--l);box-shadow:5px 5px 0 var(--l)}
+@media(max-width:767px){#menu{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;background:var(--k);border:3px solid var(--w);border-top:0}#menu a{padding:1rem;border-bottom:3px solid var(--w)}}
+</style>
+</head>
+<body>
+<header class="sticky top-0 z-50" style="background:var(--k);border-bottom:3px solid var(--w)">
+  <div class="container relative flex items-center justify-between py-3">
+    <a href="#inicio" class="rm text-lg md:text-xl no-underline" style="color:var(--l)">MERCADO<span style="color:var(--p)">/</span>RUDO</a>
+    <nav id="menu" class="hidden md:flex items-center gap-1"><a href="#inicio" data-link="inicio">Inicio</a><a href="#catalogo" data-link="catalogo">Productos</a><a href="#nosotros" data-link="nosotros">Nosotros</a><a href="#contacto" data-link="contacto">Contacto</a></nav>
+    <button id="burger" aria-label="Abrir menú" class="md:hidden w-12 h-12 grid place-items-center text-2xl" style="border:3px solid var(--w);background:var(--p);color:var(--k)"><i class="bi bi-list"></i></button>
+  </div>
+</header>
+
+<main class="container py-8 md:py-12">
+
+<section data-page="inicio">
+  <div class="hero p-5 md:p-14 mb-5">
+    <p class="mb-3 font-bold"><span class="tag" style="color:var(--l)">Chichicastenango · Jueves y domingo</span></p>
+    <h1 class="text-4xl md:text-7xl mb-4">El mercado <span class="hl">no pide</span> permiso</h1>
+    <p class="mb-5 font-bold" style="max-width:520px">Artesanía guatemalteca con actitud: textiles, máscaras y cerámica. Colores fuertes, trato directo.</p>
+    <div class="flex flex-wrap gap-4"><a href="#catalogo" class="btn-b">Ver productos</a><a href="#contacto" class="btn-b btn-p">Hablar con nosotros</a></div>
+  </div>
+  <div class="row g-4">
+    <div class="col-md-4"><div class="bx p-4 h-100"><div class="rm text-4xl" style="color:var(--c)">01</div><h4 class="text-lg my-2">Directo</h4><p class="mb-0">De la mano del artesano a la tuya.</p></div></div>
+    <div class="col-md-4"><div class="bx p-4 h-100"><div class="rm text-4xl" style="color:var(--p)">02</div><h4 class="text-lg my-2">Ruidoso</h4><p class="mb-0">Colores que se escuchan desde lejos.</p></div></div>
+    <div class="col-md-4"><div class="bx p-4 h-100"><div class="rm text-4xl" style="color:var(--l)">03</div><h4 class="text-lg my-2">Auténtico</h4><p class="mb-0">Sin réplicas, sin plástico, sin cuento.</p></div></div>
+  </div>
+</section>
+
+<section data-page="catalogo" hidden>
+  <h2 class="text-4xl md:text-6xl mb-2">Productos<span style="color:var(--p)">!</span></h2>
+  <p class="mb-4 font-bold">Stock limitado. Cuando se acaba, se acaba.</p>
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4"><div class="bx-w h-100"><img class="pimg" loading="lazy" alt="Textil" src="https://images.pexels.com/photos/7205806/pexels-photo-7205806.jpeg?auto=compress&cs=tinysrgb&w=800"><div class="p-3"><span class="tag">Textil</span><h4 class="text-lg my-2">Cinturón tejido</h4><div class="flex justify-between items-center"><b class="rm text-xl">Q95</b><a href="#contacto" class="btn-b !py-1 !px-3 !text-xs">Pedir</a></div></div></div></div>
+    <div class="col-md-6 col-lg-4"><div class="bx-w h-100"><img class="pimg" loading="lazy" alt="Mercado" src="https://images.pexels.com/photos/8207648/pexels-photo-8207648.jpeg?auto=compress&cs=tinysrgb&w=800"><div class="p-3"><span class="tag">Madera</span><h4 class="text-lg my-2">Máscara de danza</h4><div class="flex justify-between items-center"><b class="rm text-xl">Q350</b><a href="#contacto" class="btn-b !py-1 !px-3 !text-xs">Pedir</a></div></div></div></div>
+    <div class="col-md-6 col-lg-4"><div class="bx-w h-100"><img class="pimg" loading="lazy" alt="Artesanía" src="https://images.pexels.com/photos/13752944/pexels-photo-13752944.jpeg?auto=compress&cs=tinysrgb&w=800"><div class="p-3"><span class="tag">Barro</span><h4 class="text-lg my-2">Jarra pintada</h4><div class="flex justify-between items-center"><b class="rm text-xl">Q160</b><a href="#contacto" class="btn-b !py-1 !px-3 !text-xs">Pedir</a></div></div></div></div>
+    <div class="col-md-6 col-lg-4"><div class="bx-w h-100"><img class="pimg" loading="lazy" alt="Textil" src="https://images.pexels.com/photos/7205811/pexels-photo-7205811.jpeg?auto=compress&cs=tinysrgb&w=800"><div class="p-3"><span class="tag">Textil</span><h4 class="text-lg my-2">Bolsa de mercado</h4><div class="flex justify-between items-center"><b class="rm text-xl">Q120</b><a href="#contacto" class="btn-b !py-1 !px-3 !text-xs">Pedir</a></div></div></div></div>
+    <div class="col-md-6 col-lg-4"><div class="bx-w h-100"><img class="pimg" loading="lazy" alt="Textil" src="https://images.pexels.com/photos/10346036/pexels-photo-10346036.jpeg?auto=compress&cs=tinysrgb&w=800"><div class="p-3"><span class="tag">Textil</span><h4 class="text-lg my-2">Mantel grande</h4><div class="flex justify-between items-center"><b class="rm text-xl">Q290</b><a href="#contacto" class="btn-b !py-1 !px-3 !text-xs">Pedir</a></div></div></div></div>
+    <div class="col-md-6 col-lg-4"><div class="bx-w h-100"><img class="pimg" loading="lazy" alt="Tejedora" src="https://images.pexels.com/photos/37099813/pexels-photo-37099813.jpeg?auto=compress&cs=tinysrgb&w=800"><div class="p-3"><span class="tag">Textil</span><h4 class="text-lg my-2">Huipil clásico</h4><div class="flex justify-between items-center"><b class="rm text-xl">Q690</b><a href="#contacto" class="btn-b !py-1 !px-3 !text-xs">Pedir</a></div></div></div></div>
+  </div>
+</section>
+
+<section data-page="nosotros" hidden>
+  <div class="row g-4">
+    <div class="col-lg-7"><div class="bx p-4 p-md-5 h-100"><h2 class="text-3xl md:text-5xl mb-3">Quiénes <span class="hl">somos</span></h2><p class="mb-3">Un colectivo de vendedores y artesanos que está harto de los intermediarios. Vendemos lo que hacemos y hacemos lo que vendemos.</p><ul class="list-none p-0 space-y-2 font-bold"><li>▶ Precios claros</li><li>▶ Pago justo al taller</li><li>▶ Piezas con firma de su autor</li></ul></div></div>
+    <div class="col-lg-5"><div class="bx-w p-2 h-100"><img class="w-100 h-100" style="min-height:280px;object-fit:cover;background:var(--p)" loading="lazy" alt="Artesana" src="https://images.pexels.com/photos/31776906/pexels-photo-31776906.jpeg?auto=compress&cs=tinysrgb&w=900"></div></div>
+    <div class="col-4"><div class="bx p-3 text-center"><div class="rm text-3xl" style="color:var(--l)">40</div><small>Talleres</small></div></div>
+    <div class="col-4"><div class="bx p-3 text-center"><div class="rm text-3xl" style="color:var(--c)">12</div><small>Años</small></div></div>
+    <div class="col-4"><div class="bx p-3 text-center"><div class="rm text-3xl" style="color:var(--p)">0</div><small>Intermediarios</small></div></div>
+  </div>
+</section>
+
+<section data-page="contacto" hidden>
+  <div class="row g-4">
+    <div class="col-lg-5"><div class="bx p-4 h-100"><h2 class="text-3xl md:text-4xl mb-3">Contacto</h2><p class="mb-2"><i class="bi bi-geo-alt-fill" style="color:var(--p)"></i> Chichicastenango, Quiché</p><p class="mb-2"><i class="bi bi-envelope-fill" style="color:var(--c)"></i> mercado@ejemplo.com</p><p class="mb-4"><i class="bi bi-whatsapp" style="color:var(--l)"></i> +502 0000 0000</p><div class="flex gap-3"><a class="soc" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a class="soc" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a class="soc" href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a><a class="soc" href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a></div></div></div>
+    <div class="col-lg-7"><form class="row g-3" onsubmit="event.preventDefault();alert('RECIBIDO.')"><div class="col-md-6"><input class="form-control" placeholder="NOMBRE" required></div><div class="col-md-6"><input type="email" class="form-control" placeholder="CORREO" required></div><div class="col-12"><textarea class="form-control" rows="5" placeholder="MENSAJE"></textarea></div><div class="col-12"><button class="btn-b btn-c" type="submit">Enviar →</button></div></form></div>
+  </div>
+</section>
+</main>
+
+<footer class="py-8" style="border-top:3px solid var(--w)">
+  <div class="container flex flex-wrap items-center justify-between gap-4">
+    <div class="flex gap-3"><a class="soc" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a class="soc" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a class="soc" href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a><a class="soc" href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a></div>
+    <small class="font-bold uppercase">© 2026 Mercado Rudo — Guatemala — Contenido de ejemplo</small>
+  </div>
+</footer>
+
+<script>
+const pages=[...document.querySelectorAll('[data-page]')],menu=document.getElementById('menu'),burger=document.getElementById('burger');
+function closeMenu(){menu.classList.add('hidden');burger.innerHTML='<i class="bi bi-list"></i>'}
+function route(){const h=(location.hash||'#inicio').slice(1);const cur=pages.some(p=>p.dataset.page===h)?h:'inicio';pages.forEach(p=>p.hidden=p.dataset.page!==cur);document.querySelectorAll('[data-link]').forEach(a=>a.classList.toggle('active',a.dataset.link===cur));closeMenu();scrollTo(0,0);document.title='MERCADO RUDO · '+cur.toUpperCase()}
+addEventListener('hashchange',route);route();
+burger.addEventListener('click',()=>{menu.classList.toggle('hidden');burger.innerHTML=menu.classList.contains('hidden')?'<i class="bi bi-list"></i>':'<i class="bi bi-x-lg"></i>'});
+document.querySelectorAll('img').forEach(i=>i.addEventListener('error',()=>{i.style.opacity=0}));
+</script>
+</body>
+</html>
